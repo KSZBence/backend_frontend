@@ -1,0 +1,25 @@
+.pipa, .x, .kuka {
+    cursor: pointer;
+}
+.elrejt {
+    display: none;
+}
+.valid {
+    color: green;
+}
+.invalid {
+    color: red;
+}
+
+body{
+    padding: 1em;
+    padding-top: 0;
+    width: 80%;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.urlap{
+    margin-bottom: 1em;
+}
