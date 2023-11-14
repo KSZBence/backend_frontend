@@ -37,7 +37,7 @@ class UrlapView {
             } else {
                 console.log('nem valid az űrlap');
             }
-            this.#esemeny("esemeny");
+            this.#adatHozzaad("adatHozzaad");
         })
     }
 
@@ -78,7 +78,7 @@ class UrlapView {
         this.formElem.append(txt);
     }
 
-    #esemeny(esemeny) {
+    #adatHozzaad(esemeny) {
         let es = new CustomEvent(esemeny, {detail : this.#urlapElemLista});
         window.dispatchEvent(es);
     }

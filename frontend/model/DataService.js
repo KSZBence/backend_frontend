@@ -16,6 +16,38 @@ class DataService {
                 // always executed
             });
     }
+
+    postData(url, data){
+        axios.post(url, data)
+      .then(function (response) {
+        console.log("RESP", response);
+        location.reload()
+      })
+      .catch(function (error) {
+        console.log("hiba", error);
+      });
+    }
+
+    putData(url, data){
+        axios.put(`${url}/${data.id}`, data)
+      .then(function (response) {
+        console.log("RESP", response);
+      })
+      .catch(function (error) {
+        console.log("hiba", error);
+      });
+    }
+
+    deleteData(url, data){
+        axios.delete(`${url}/${id}`, data)
+      .then(function (response) {
+        console.log("RESP", response);
+      })
+      .catch(function (error) {
+        console.log("hiba", error);
+      });
+    }
+
 }
 
 export default DataService;

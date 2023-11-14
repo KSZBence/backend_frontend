@@ -4,7 +4,7 @@ class ListaView {
     constructor(szuloElem, lista) {
         this.szuloElem = szuloElem;
         this.lista = lista;
-        this.szuloElem.append("<table class='table table-bordered'></table>");
+        this.szuloElem.html("<table class='table table-bordered'></table>");
         this.tabla = this.szuloElem.children("table");
 
     }
